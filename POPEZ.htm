@@ -1,0 +1,66 @@
+<!DOCTYPE = html>
+<html>
+<head>
+<title>Pop Edwin Zuiderweg</title>
+  <meta charset = utf-8>
+  <meta name = description  content = "mandelbrot fractal">
+  <meta name = keywords content = "adresboek">
+</head>
+
+<link rel="stylesheet" href="code/pop.css"> 
+<script src= "code/pop.js"></script>
+<body onLoad ="LaadCanvas()">
+<h1>Persoonlijk Ontwikkelings Plan</h1> 
+<h2>Edwin Zuiderweg</h2>
+<center>
+<canvas id="myCanvas" Onclick= "SelectBallon(event)" width="800" height="200">
+</center>
+</canvas>
+<form name = "Niveau" style="clear: both">  
+   <center>
+   Niveau:
+        <select name = "Popniveau" onChange= "JavaScript: NiveauVeranderd(this.value)">
+        <option selected value  = 1> Huidig niveau
+        <option value = 2> Streefniveau
+        </select>     
+   </center>
+<form>
+
+<p id = "inhoud">
+<center>
+  <table> 
+    <tr width=50 height=50>
+      <th id = "b1" colspan="2"> Java Script </th>
+    </tr>
+    <tr>
+      <td width=50 height=50>Beginniveau:</td>
+      <td width=50 height=50 id = "b2"></td>
+    </tr>
+    <tr>
+      <td width=50 height=50>Eindniveau:</td>
+      <td width=50 height=50 id = "b3"></td>
+    </tr>
+    <tr>
+      <td width=50 height=50>Prioriteit</td>
+      <td width=50 height=50 id = "b4"></td>
+    </tr>
+    <tr>
+      <td width=50 height=50>Begindatum</td>
+      <td width=50 height=50 id = "b5"></td>
+    </tr>
+    <tr>
+      <td width=50 height=50>Einddatum: </td>
+      <td width=50 height=50 id = "b6"></td>
+    </tr>
+    <tr>
+      <td width=50 height=50>Opmerkingen:</td>
+      <td width=50 height=50 id = "b7"></td>
+    </tr>
+  
+  </table>  
+</center>
+
+
+</p>
+</body>
+</html>
